@@ -21,13 +21,29 @@ $tt-anim-time: 0.3s !default;
   }
 
   @if $placement == top {
-    &::after { bottom: calc(#{$tt-arrow-size} / 2 * -1); left: 50%; transform: translateX(-50%) rotate(45deg); }
+    &::after {
+      bottom: calc(#{$tt-arrow-size} / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+    }
   } @else if $placement == bottom {
-    &::after { top: calc(#{$tt-arrow-size} / 2 * -1); left: 50%; transform: translateX(-50%) rotate(45deg); }
+    &::after {
+      top: calc(#{$tt-arrow-size} / 2 * -1);
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+    }
   } @else if $placement == left {
-    &::after { right: calc(#{$tt-arrow-size} / 2 * -1); top: 50%; transform: translateY(-50%) rotate(45deg); }
+    &::after {
+      right: calc(#{$tt-arrow-size} / 2 * -1);
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
   } @else if $placement == right {
-    &::after { left: calc(#{$tt-arrow-size} / 2 * -1); top: 50%; transform: translateY(-50%) rotate(45deg); }
+    &::after {
+      left: calc(#{$tt-arrow-size} / 2 * -1);
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
   }
 }
 
@@ -42,7 +58,7 @@ $tt-anim-time: 0.3s !default;
   box-shadow: 0 8px 24px rgba(16, 24, 40, 0.25);
   opacity: 0;
   transform: translateY($tt-anim-distance) scale(0.99);
-  transition: opacity $tt-anim-time cubic-bezier(.2,.9,.3,1), transform $tt-anim-time cubic-bezier(.2,.9,.3,1);
+  transition: opacity $tt-anim-time cubic-bezier(.2, .9, .3, 1), transform $tt-anim-time cubic-bezier(.2, .9, .3, 1);
   z-index: $tt-z-index;
   max-width: $tt-max-width;
   white-space: pre-wrap;
@@ -52,10 +68,21 @@ $tt-anim-time: 0.3s !default;
     transform: translateY(0) scale(1);
   }
 
-  &[data-placement="top"] { @include tooltip-arrow(top); }
-  &[data-placement="bottom"] { @include tooltip-arrow(bottom); }
-  &[data-placement="left"] { @include tooltip-arrow(left); }
-  &[data-placement="right"] { @include tooltip-arrow(right); }
+  &[data-placement="top"] {
+    @include tooltip-arrow(top);
+  }
+
+  &[data-placement="bottom"] {
+    @include tooltip-arrow(bottom);
+  }
+
+  &[data-placement="left"] {
+    @include tooltip-arrow(left);
+  }
+
+  &[data-placement="right"] {
+    @include tooltip-arrow(right);
+  }
 }
 
 .dynamic {
