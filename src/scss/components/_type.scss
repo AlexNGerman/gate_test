@@ -1,0 +1,301 @@
+@import "../base/breakpoints";
+@import "../base/mixins/fluid-type";
+@import "../base/variables";
+
+.font {
+  &-default {
+    font-family: $font-default !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-jakarta;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.45;
+  color: $color-blue-dark;
+  letter-spacing: -0.017em;
+}
+
+h1, .h1 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 44px, 70px);
+}
+
+h2, .h2 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 44px, 55px);
+}
+
+h3, .h3 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 20px, 45px);
+}
+
+h4, .h4 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 22px, 22px);
+}
+
+h5, .h5 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 25px);
+}
+
+h6, .h6 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 14px, 20px);
+}
+
+.text-red {
+  color: $color-red !important;
+}
+
+.text-red-primary {
+  color: $color-red-primary !important;
+}
+
+.font-8 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 8px, 8px);
+}
+
+.font-9 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 9px, 9px);
+}
+
+.font-12 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 12px, 12px);
+}
+
+.font-13 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 13px, 13px);
+}
+
+.font-13b {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 13px, 13px);
+}
+
+.font-14 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 14px, 14px);
+}
+
+.font-15 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 15px, 15px);
+}
+
+.font-16 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 16px);
+}
+
+.font-18 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 18px);
+}
+
+.font-19 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 15px, 19px);
+}
+
+.font-19b {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 19px);
+}
+
+.font-20 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 20px);
+}
+
+.font-22 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 22px);
+}
+
+.font-24 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 24px);
+}
+
+.font-25 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 18px, 25px);
+}
+
+.font-26 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 12px, 26px);
+}
+
+.font-27 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 20px, 27px);
+}
+
+.font-30 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 30px);
+}
+
+.font-32 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 28px, 32px);
+}
+
+.font-35 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 24px, 35px);
+}
+
+.font-36 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 34px, 36px);
+}
+
+.font-38 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 26px, 38px);
+}
+
+.font-40 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 28px, 40px);
+}
+
+.font-40b {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 22px, 40px);
+}
+
+.font-40c {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 34px, 40px);
+}
+
+.font-43 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 16px, 43px);
+}
+
+.font-45 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 32px, 45px);
+}
+
+.font-50 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 30px, 50px);
+}
+
+.font-55 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 31px, 55px);
+}
+
+.font-60 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 44px, 60px);
+}
+
+.font-60b {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 24px, 60px);
+}
+
+.font-65 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 44px, 65px);
+}
+
+.font-70 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 28px, 70px);
+}
+
+.font-70b {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 34px, 70px);
+}
+
+.font-75 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 44px, 75px);
+}
+
+.font-80 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 30px, 80px);
+}
+
+.font-90 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 40px, 90px);
+}
+
+.font-100 {
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 60px, 100px);
+}
+
+@for $i from 1 through 9 {
+  $w: $i * 100;
+
+  .f-weight-#{$w} {
+    font-weight: #{$w} !important;
+  }
+}
+
+.section-title {
+  padding: 0;
+  margin-bottom: 1em;
+  line-height: 1;
+  color: inherit;
+
+  @include fluid-type(font-size, $screen-xs, $screen-xxl-max, 24px, 73px);
+}
+
+.text-highlight {
+  background: $color-dark;
+  color: $color-white !important;
+  padding: 0.25em 0.5em;
+}
+
+.link-open {
+  position: relative;
+  padding: 0 24px 0 0;
+
+  &:after {
+    content: "\e901";
+    font-family: $font-icon;
+    font-weight: normal;
+    color: inherit;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: right 0.3s ease;
+  }
+
+  &:hover {
+    &:after {
+      right: -3px;
+    }
+  }
+}
+
+.styled-list {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 24px;
+    margin: 0 0 5px;
+    color: $color-blue-light;
+    line-height: 1.57;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    font-size: 14px;
+
+    &:after {
+      content: "\e900";
+      font-family: $font-icon;
+      color: $color-aqua;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      font-size: 18px;
+      line-height: 1;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+
+  }
+
+  @include media-breakpoint-down(sm) {
+
+  }
+
+  @include media-breakpoint-down(xs) {
+
+  }
+}

@@ -1,0 +1,79 @@
+@mixin placeholder-style($color, $font-family, $size: false, $font-weight: false, $hide: false){
+
+  font-family: $font-family;
+
+  @if $size {
+    font-size: $size;
+  }
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: $font-family;
+    color: $color;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-style: italic;
+
+    @if $hide {
+      opacity: 0 !important;
+    }
+    @if $size {
+      font-size: $size;
+    }
+    @if $font-weight {
+      font-weight: $font-weight;
+    }
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    font-family: $font-family;
+    color: $color;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-style: italic;
+
+    @if $hide {
+      opacity: 0 !important;
+    }
+    @if $size {
+      font-size: $size;
+    }
+    @if $font-weight {
+      font-weight: $font-weight;
+    }
+  }
+  &::-ms-input-placeholder { /* IE 10+ */
+    font-family: $font-family;
+    color: $color;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-style: italic;
+
+    @if $hide {
+      opacity: 0 !important;
+    }
+    @if $size {
+      font-size: $size;
+    }
+    @if $font-weight {
+      font-weight: $font-weight;
+    }
+  }
+  &::-moz-placeholder { /* Firefox 18- */
+    font-family: $font-family;
+    color: $color;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-style: italic;
+
+    @if $hide {
+      opacity: 0 !important;
+    }
+    @if $size {
+      font-size: $size;
+    }
+    @if $font-weight {
+      font-weight: $font-weight;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip Reusable Component</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#fa0f00">
+  <meta name="msapplication-TileColor" content="#fa0f00">
+  <meta name="theme-color" content="#fa0f00">
+</head>
+<body>
+<div class="main-wrap">
+  <section class="section">
+    <div class="container-fluid container-xl">
+      <div class="section-card row">
+        <div class="col-12 p-0">
+          <h4 class="mb-3">Tooltip Demo — Focusable Triggers</h4>
+
+          <p class="mb-3 text-body-secondary">
+            Any element with <code>data-tooltip</code> shows a tooltip on hover and focus. Use
+            <code>data-placement</code> to prefer <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> (default is <code>top</code>).
+          </p>
+
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary me-2" data-tooltip="Tooltip at top (default)">Button</button>
+            <a href="#" class="btn btn-outline-primary me-2" data-tooltip="Tooltip on the right" data-placement="right">Link</a>
+            <span class="badge text-bg-secondary me-2" data-tooltip="Tooltip at bottom" data-placement="bottom">Text (span)</span>
+            <div class="d-inline-block border rounded px-2 py-1" data-tooltip="Tooltip on the left" data-placement="left">Block (div)</div>
+          </div>
+
+          <div class="border-top pt-3">
+            <div class="d-flex align-items-center flex-wrap gap-2">
+              <button id="add" type="button" class="btn btn-success btn-sm" data-tooltip="Add a dynamic element" data-placement="right">Add element</button>
+              <span class="text-muted">Container:</span>
+              <span id="container"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

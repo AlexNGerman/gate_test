@@ -1,0 +1,158 @@
+/**
+ * Variables
+*/
+
+$color-black: #000;
+$color-dark: #262626;
+$color-white: #fff;
+
+$color-blue: #0E6ED6;
+$color-blue-2: #0552A5;
+$color-blue-3: #003D7F;
+$color-aqua: #00A89F;
+
+$color-blue-dark: #1A2F45;
+$color-blue-light: #7D91A2;
+$color-blue-light-2: #D8DFE7;
+
+$color-grey: #7D91A2;
+$color-light-grey: #f6f6f6;
+
+$color-red: #ff0000;
+$color-red-primary: #fa0f00;
+
+/* Fonts */
+$font-base: Arial, Helvetica, sans-serif;
+$font-default: 'Noto Sans', $font-base;
+$font-jakarta: 'Plus Jakarta Sans', $font-base;
+$font-icon: 'icomoon';
+
+/* Button color tokens (mapped to local palette) */
+$btn-color-primary-text: $color-white;
+$btn-color-primary: $color-blue;
+$btn-color-primary-hover: $color-blue-2;
+$btn-color-primary-pressed: $color-blue-3;
+
+$btn-color-secondary-text: $color-blue;
+$btn-color-secondary: $color-white;
+$btn-color-secondary-hover: $color-blue-light-2;
+$btn-color-secondary-pressed: $color-blue-light;
+
+$btn-color-outline-text: $color-dark;
+$btn-color-outline-text-hover: $color-white;
+$btn-color-outline: $color-white;
+$btn-color-outline-hover: $color-light-grey;
+$btn-color-outline-pressed: $color-blue-light;
+
+/* RWS Palette and link tokens */
+$palette: (
+  "neutral10": #FFFFFF,
+  "neutral20": #f5f5f5,
+  "neutral30": #EDEDED,
+  "neutral40": #DFDFDF,
+  "neutral50": #D0D0D0,
+  "neutral60": #B2B2B2,
+  "neutral70": #8C8C8C,
+  "neutral80": #777777,
+  "neutral90": #585858,
+  "neutral100": #000000,
+  "primary10": #ECE6F1,
+  "primary20": #C5B3D4,
+  "primary30": #B299C5,
+  "primary40": #8B67A9,
+  "primary50": #65348C,
+  "primary60": #3E016F,
+  "primary70": #320159,
+  "primary80": #130021,
+  "primary90": #0F001B,
+  "primary100": #000000,
+  "secondary10": #FDE6EE,
+  "secondary20": #FACCDD,
+  "secondary30": #F599BB,
+  "secondary40": #EE4D87,
+  "secondary50": #EB3376,
+  "secondary60": #E60054,
+  "secondary70": #A1003B,
+  "secondary80": #5C0022,
+  "secondary90": #450019,
+  "secondary100": #170008,
+  "success10": #F2FBCE,
+  "success20": #D7F46C,
+  "success30": #BDED0A,
+  "success40": #AAD509,
+  "success50": #97BE08,
+  "success60": #84A607,
+  "success70": #5F7705,
+  "success80": #4C5F04,
+  "success90": #394703,
+  "success100": #262F02,
+  "warning10": #FFFBE6,
+  "warning20": #FFF1B8,
+  "warning30": #FFE58F,
+  "warning40": #FFD666,
+  "warning50": #FFC53D,
+  "warning60": #FAAD14,
+  "warning70": #D48806,
+  "warning80": #AD6800,
+  "warning90": #874D00,
+  "warning100": #613400,
+  "error10": #FFECEE,
+  "error20": #FFC6CB,
+  "error30": #FF6875,
+  "error40": #FF5563,
+  "error50": #FF4252,
+  "error60": #CC3542,
+  "error70": #B32E39,
+  "error80": #992831,
+  "error90": #802129,
+  "error100": #661A21,
+  "info10": #E6F7FF,
+  "info20": #BAE7FF,
+  "info30": #91D5FF,
+  "info40": #69C0FF,
+  "info50": #40A9FF,
+  "info60": #1890FF,
+  "info70": #096DD9,
+  "info80": #0050B3,
+  "info90": #003A8C,
+  "info100": #002766,
+  "hidcote10": #f3eeff,
+  "hidcote20": #e6ddff,
+  "hidcote30": #cdbafe,
+  "hidcote40": #b598fe,
+  "hidcote50": #9c75fd,
+  "hidcote60": #8353FD,
+  "hidcote70": #6942ca,
+  "hidcote80": #422a7f,
+  "hidcote90": #342165,
+  "hidcote100": #1a1133,
+  "transparent": transparent,
+);
+
+/* Link color tokens mapped to palette */
+$lnk-color: map-get($palette, 'primary60');
+$lnk-color-hover: map-get($palette, 'primary70');
+$lnk-color-pressed: map-get($palette, 'primary80');
+$lnk-color-focused: $lnk-color-hover;
+
+/* Extended button tokens (mapped to RWS palette) */
+$btn-color-primary-red-text: map-get($palette, 'neutral10');
+$btn-color-primary-red: map-get($palette, 'secondary60');
+$btn-color-primary-red-hover: map-get($palette, 'secondary70');
+$btn-color-primary-red-pressed: map-get($palette, 'secondary70');
+
+$btn-color-secondary-red-text: map-get($palette, 'secondary60');
+$btn-color-secondary-red: map-get($palette, 'neutral10');
+$btn-color-secondary-red-hover: map-get($palette, 'secondary60');
+$btn-color-secondary-red-pressed: map-get($palette, 'secondary60');
+
+$btn-color-primary-violet-text: map-get($palette, 'neutral10');
+$btn-color-primary-violet: map-get($palette, 'hidcote60');
+$btn-color-primary-violet-hover: map-get($palette, 'hidcote70');
+$btn-color-primary-violet-pressed: map-get($palette, 'hidcote70');
+
+$btn-color-secondary-violet-text: map-get($palette, 'neutral90');
+$btn-color-secondary-violet-text-hover: map-get($palette, 'neutral10');
+$btn-color-secondary-violet: map-get($palette, 'hidcote60');
+$btn-color-secondary-violet-hover: map-get($palette, 'hidcote70');
+$btn-color-secondary-violet-pressed: map-get($palette, 'hidcote70');

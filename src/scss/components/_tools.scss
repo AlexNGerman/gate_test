@@ -1,0 +1,13 @@
+@for $i from 1 through 20 {
+  .border-t-primary-#{$i} {
+    border-top: #{$i}px solid $color-red-primary !important;
+  }
+
+  .border-b-primary-#{$i} {
+    border-bottom: #{$i}px solid $color-red-primary !important;
+  }
+}
+
+.img-greyscale {
+  filter: grayscale(100%) !important;
+}

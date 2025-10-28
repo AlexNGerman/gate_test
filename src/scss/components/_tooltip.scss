@@ -1,0 +1,67 @@
+/* Accessible tooltip styles with variables and arrow mixin */
+
+// Variables
+$tt-bg: #111 !default;
+$tt-color: #fff !default;
+$tt-z-index: 10000 !default;
+$tt-max-width: 256px !default;
+$tt-arrow-size: 10px !default;
+$tt-anim-distance: 6px !default;
+$tt-anim-time: 0.3s !default;
+
+// Arrow mixin
+@mixin tooltip-arrow($placement) {
+  &::after {
+    content: "";
+    position: absolute;
+    width: $tt-arrow-size;
+    height: $tt-arrow-size;
+    background: $tt-bg;
+    transform: rotate(45deg);
+  }
+
+  @if $placement == top {
+    &::after { bottom: calc(#{$tt-arrow-size} / 2 * -1); left: 50%; transform: translateX(-50%) rotate(45deg); }
+  } @else if $placement == bottom {
+    &::after { top: calc(#{$tt-arrow-size} / 2 * -1); left: 50%; transform: translateX(-50%) rotate(45deg); }
+  } @else if $placement == left {
+    &::after { right: calc(#{$tt-arrow-size} / 2 * -1); top: 50%; transform: translateY(-50%) rotate(45deg); }
+  } @else if $placement == right {
+    &::after { left: calc(#{$tt-arrow-size} / 2 * -1); top: 50%; transform: translateY(-50%) rotate(45deg); }
+  }
+}
+
+.tooltip {
+  position: fixed;
+  pointer-events: none;
+  background: $tt-bg;
+  color: $tt-color;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.25);
+  opacity: 0;
+  transform: translateY($tt-anim-distance) scale(0.99);
+  transition: opacity $tt-anim-time cubic-bezier(.2,.9,.3,1), transform $tt-anim-time cubic-bezier(.2,.9,.3,1);
+  z-index: $tt-z-index;
+  max-width: $tt-max-width;
+  white-space: pre-wrap;
+
+  &[data-state="visible"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  &[data-placement="top"] { @include tooltip-arrow(top); }
+  &[data-placement="bottom"] { @include tooltip-arrow(bottom); }
+  &[data-placement="left"] { @include tooltip-arrow(left); }
+  &[data-placement="right"] { @include tooltip-arrow(right); }
+}
+
+.dynamic {
+  border: 1px dashed #0a74da;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+}
+
+
